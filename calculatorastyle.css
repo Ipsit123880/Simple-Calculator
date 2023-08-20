@@ -1,0 +1,60 @@
+body{
+    background-color : lightblue;
+}
+*{ 
+    font-family : Arial, sans-serif;
+}
+
+.calculator {
+    width: 275px;
+    margin: 200px auto;
+    background-color : mediumaquamarine;
+    border: 3px  dashed maroon ;
+    /* border-radius: 100px dashed yellow; */
+    padding: 15px;
+    /* Padding is used to create space around an element's
+    content, inside of any defined borders. */
+}
+
+#result{
+    background-color: white;
+    width : 160px;
+    height : 23px;
+    margin-bottom: 10px;
+    /* used to vary the distance between display box and the
+    numbers */
+    /* padding-bottom: 10px; */
+}
+
+.button-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+.button-row1 {
+    display: flex;
+}
+
+.button {
+    flex-grow: 2;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+/* .button{
+    background-color :azure;
+    margin: 5px;
+    padding : 10px;
+} */
+
+.button:hover {
+    background-color: yellowgreen;
+}
+
+.button:active {
+    background-color: aliceblue ;
+    /* if we click on the numbers the color is goona change
+    to the coloe that we have set up */
+}
