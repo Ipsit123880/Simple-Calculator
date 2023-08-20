@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorastyle.css">
+</head>
+<body>
+    <div class = "calculator">
+        <div class = "display">
+            <input type = "text" id = "result" readonly>
+<!-- This creates an input element with the type attribute set to text, an id attribute of result,
+and the readonly attribute.This is where the results of the calculator will be displayed,
+and the readonly attribute ensures that the user cannot manually edit the display. -->
+        </div>
+        <div class="button-row">
+<!-- The <button> tag defines a clickable button. Inside a <button> element you can put text
+(and tags like <i> , <b> , <strong> , <br> , <img> , etc.).
+That is not possible with a button created with the <input> element! -->
+            <button class="button" onclick="addChar('7')">7</button>
+            <button class="button" onclick="addChar('8')">8</button>
+            <button class="button" onclick="addChar('9')">9</button>
+            <button class="button" onclick="addChar('/')">/</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="addChar('4')">4</button>
+            <button class="button" onclick="addChar('5')">5</button>
+            <button class="button" onclick="addChar('6')">6</button>
+            <button class="button" onclick="addChar('*')">*</button>
+ <!-- onclick is an HTML event attribute that is used to specify a
+JavaScript code to be executed when an element is clicked. It is used to create interactivity on a web page. -->
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="addChar('1')">1</button>
+            <button class="button" onclick="addChar('2')">2</button>
+            <button class="button" onclick="addChar('3')">3</button>
+            <button class="button" onclick="addChar('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="addChar('0')">0</button>
+            <button class="button" onclick="addChar('.')">.</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="addChar('+')">+</button>
+        </div>
+        <div class = "button-row1">
+            <button class = "button" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src = "calculatorscript.js"></script>
+
+</body>
+</html>
